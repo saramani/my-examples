@@ -3,6 +3,8 @@ Prerequiste
 1) JDK 1.8
 2) Maven
 
+This Project is created as a Fat Jar to run it do the Following
+
 
 1) Clone the project 
 
