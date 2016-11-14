@@ -14,8 +14,7 @@ public class PortFolioCalculator {
      * InflationRate, NoOfYears, Number Of Simulations. It Prints the Median,
      * 90th percentile, and the 10th Percentile of the Portfolio.
      *
-     * @param args
-     *            The input Values
+     * @param args The input Values
      */
     public static void main(String[] args) {
         try {
