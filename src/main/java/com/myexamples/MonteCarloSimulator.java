@@ -26,17 +26,15 @@ public class MonteCarloSimulator {
     public static final double[] calculatePortfolio(double initialInvestment, double averageReturn,
             double risk, double inflation, int noOfYears, int simulations) {
 
-        double[] portfolioValues = new double[simulations];
+    	double[] portfolioValues = new double[simulations];
 
         for (int x = 0; x < simulations; x++) {
             double portfolioValue = initialInvestment;
-
             for (int y = 0; y < noOfYears; y++) {
                 portfolioValue = calculatePortfolioValueForAYear(portfolioValue, averageReturn, risk, inflation);
             }
             portfolioValues[x] = portfolioValue;
         }
-
         return portfolioValues;
     }
 

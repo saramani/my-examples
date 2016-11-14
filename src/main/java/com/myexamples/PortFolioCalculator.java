@@ -54,7 +54,7 @@ public class PortFolioCalculator {
                     "10% Worst Case: $" + dFormat.format(MonteCarloSimulator.getPercentile(portfolioValues, 10)));
         } catch (NumberFormatException | ArrayIndexOutOfBoundsException excp) {
             System.out.println(
-                    "USAGE : [InitialInvestment] [AverageReturn] [Risk] [inflationRate] [NoOfYears] [Simulations]");
+                    "USAGE : [InitialInvestment] [AverageReturn] [Risk] [inflationRate] [NoOfYears] [Simulations]\n");
             excp.printStackTrace();
         }
     }
